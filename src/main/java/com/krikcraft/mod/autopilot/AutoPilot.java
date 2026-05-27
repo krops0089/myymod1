@@ -118,11 +118,11 @@ public class AutoPilot {
     private static void moveToward(PlayerEntity player, double tx, double ty, double tz) {
         // Устанавливаем позицию напрямую (требует серверной синхронизации через /fly)
         // На анархии с /fly сервер принимает движение клиента
-        player.setVelocity(new Vector3d(
-                (tx - player.getPosX()) * 0.5,
-                (ty - player.getPosY()) * 0.3,
-                (tz - player.getPosZ()) * 0.5
-        ));
+    player.setVelocity(
+            (tx - player.getPosX()) * 0.5,
+            (ty - player.getPosY()) * 0.3,
+            (tz - player.getPosZ()) * 0.5
+    );
         player.setPosition(
                 player.getPosX() + player.getMotion().x,
                 player.getPosY() + player.getMotion().y,
