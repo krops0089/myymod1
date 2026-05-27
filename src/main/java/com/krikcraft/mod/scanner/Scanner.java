@@ -120,7 +120,7 @@ public class Scanner {
 
         if (entity instanceof CreeperEntity) {
             CreeperEntity creeper = (CreeperEntity) entity;
-            return creeper.getPowered() ? "⚡ Заряженный крипер" : null; // только заряженные
+            return creeper.isCharged() ? "⚡ Заряженный крипер" : null; // только заряженные
         }
         if (entity instanceof GuardianEntity && !(entity instanceof ElderGuardianEntity)) {
             return "🐟 Страж";
