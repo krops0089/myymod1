@@ -20,7 +20,8 @@ public class KeyBindings {
                 GLFW.GLFW_KEY_G,
                 "key.categories.krikcraft"
         );
-        net.minecraftforge.client.ClientRegistry.registerKeyBinding(openMenuKey);
+        net.minecraftforge.client.settings.KeyConflictContext.IN_GAME.toString();
+        net.minecraftforge.fml.client.registry.ClientRegistry.registerKeyBinding(openMenuKey);
     }
 
     public static void handleKeyInputs(Minecraft mc) {
